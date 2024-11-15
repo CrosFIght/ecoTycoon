@@ -16,14 +16,6 @@ Gra łączy elementy strategii ekonomicznej z edukacją na temat ochrony środow
 
 ---
 
-## Technologie
-- **Backend:** Python (z wykorzystaniem frameworka Flask lub Django).
-- **Frontend:** HTML, CSS, JavaScript (opcjonalnie z wykorzystaniem bibliotek takich jak jQuery lub frameworka Vue.js/React).
-- **Baza danych:** SQLite/PostgreSQL (do zapisywania użytkowników, postępów gry i statystyk).
-- **Hosting:** GitHub Pages (frontend), Heroku/Render/Platform.sh (backend).
-
----
-
 ## Jak grać?
 1. **Rejestracja i logowanie:** Zarejestruj się lub zaloguj, aby zacząć grę.
 2. **Sprzątanie:** Oczyszczaj zanieczyszczone tereny, aby zyskać przestrzeń pod budowę fabryk.
