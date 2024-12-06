@@ -43,7 +43,7 @@ Aby uruchomić grę na swoim lokalnym komputerze, wykonaj poniższe kroki:
 
     ```bash
     python -m venv venv
-    source venv/bin/activate   # Na Windows: venv\Scripts\activate
+    venv\Scripts\activate
     ```
 
 3. **Zainstaluj wymagane zależności**:
