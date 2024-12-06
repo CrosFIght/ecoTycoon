@@ -1,6 +1,6 @@
 # EcoTycoon - Gra Ekologiczna
 
-EcoTycoon to interaktywna gra symulacyjna, w której zarządzasz fabrykami i oczyszczalniami powietrza, aby kontrolować zanieczyszczenie i zarabiać pieniądze. Celem gry jest znalezienie równowagi między rozwojem gospodarczym poprzez rozbudowę fabryk a zarządzaniem poziomem zanieczyszczenia przy pomocy oczyszczalni powietrza. Gra została zbudowana przy użyciu Flaska, SQLAlchemy i bazy danych SQLite.
+**EcoTycoon** to interaktywna gra symulacyjna, w której zarządzasz fabrykami i oczyszczalniami powietrza, aby kontrolować poziom zanieczyszczenia i zarabiać pieniądze. Celem gry jest znalezienie równowagi między rozwojem gospodarczym poprzez rozbudowę fabryk a zarządzaniem poziomem zanieczyszczenia przy pomocy oczyszczalni powietrza. Gra została zbudowana przy użyciu **Flaska**, **SQLAlchemy** i bazy danych **SQLite**.
 
 ## Funkcje
 
@@ -10,6 +10,7 @@ EcoTycoon to interaktywna gra symulacyjna, w której zarządzasz fabrykami i ocz
 - **Ulepszanie**: Ulepszaj fabryki i oczyszczalnie powietrza, aby zwiększyć ich efektywność i dochody.
 - **Dynamiczna siatka**: Siatka o wymiarach 32 kafelków, na której możesz budować i ulepszać fabryki i oczyszczalnie powietrza.
 - **Postęp gry**: Twoim celem jest zarządzanie równowagą między pieniędzmi, zanieczyszczeniem a budową fabryk i oczyszczalni powietrza.
+- **Zakończenie gry**: Gra kończy się, gdy poziom zanieczyszczenia przekroczy 1000.
 
 ## Technologie
 
@@ -43,16 +44,19 @@ Aby uruchomić grę na swoim lokalnym komputerze, wykonaj poniższe kroki:
 
     ```bash
     python -m venv venv
-    venv\Scripts\activate
+    venv\Scripts\activate  # Na systemach Windows
+    source venv/bin/activate  # Na systemach Linux/macOS
     ```
 
 3. **Zainstaluj wymagane zależności**:
+
+    Jeśli masz plik `requirements.txt`, uruchom:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-    Jeśli nie masz pliku `requirements.txt`, możesz zainstalować Flask i SQLAlchemy ręcznie:
+    Jeśli nie, możesz zainstalować Flask i SQLAlchemy ręcznie:
 
     ```bash
     pip install Flask SQLAlchemy
@@ -91,3 +95,6 @@ Aby uruchomić grę na swoim lokalnym komputerze, wykonaj poniższe kroki:
 
 5. **Aktualizacje w czasie rzeczywistym**:
     - Gra aktualizuje status co sekundę, wyświetlając aktualne dane dotyczące pieniędzy i zanieczyszczenia.
+
+6. **Zakończenie gry**:
+    - Gra kończy się, gdy poziom zanieczyszczenia przekroczy **1000**. Po tym wydarzeniu użytkownik otrzymuje komunikat o zakończeniu gry, a rozgrywka jest zablokowana.
